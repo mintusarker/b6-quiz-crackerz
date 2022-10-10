@@ -1,0 +1,9 @@
+.carts{
+    border: 2px solid lightcoral;
+    width: 350px;
+}
+
+.carts img{
+    width: 100%;
+    height: 350px;
+}

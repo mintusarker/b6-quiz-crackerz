@@ -1,0 +1,21 @@
+.navber{
+    /* width: 1440px; */
+    height: 80px;
+    background-color: rgb(109, 137, 55);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    padding-right: 100px;
+}
+.navber a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+}
+.navber a:hover{
+   color: orange;
+}
