@@ -4,13 +4,24 @@ import DetailsQuiz from '../DetailsQuiz/DetailsQuiz';
 
 const Quiz = (id) => {
     const quiz = useLoaderData(id);
-    console.log(quiz.data.questions)
+    console.log(quiz)
+    const {correctAnswer} = quiz;
+    // console.log(quiz.data.questions)
+
+    // const showAnswerHandle = (correctAnswer) =>{
+    //     const answer = {correctAnswer};
+    //     console.log(answer);
+
+    // }
+
+    
     return (
-        <div className='container'>
+        <div className='container py-5 my-5'>
            {
             quiz.data.questions.map(quiz => 
             <DetailsQuiz
             quiz = {quiz}
+            // showAnswerHandle ={showAnswerHandle}
             ></DetailsQuiz>
             )
            }

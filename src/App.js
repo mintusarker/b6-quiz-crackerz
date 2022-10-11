@@ -5,6 +5,7 @@ import Quiz from './components/Quiz/Quiz';
 import Statistics from './components/Statistics/Statistics';
 import Topics from './components/Topic/Topics';
 import Main from './layout/Main';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
       element : <Blog></Blog>},
 
       {path : '/Statistics' , 
-      loader : () => fetch ('https://openapi.programming-hero.com/api/quiz'),
+      // loader : () => fetch ('https://openapi.programming-hero.com/api/quiz'),
       element : <Statistics></Statistics>}
 
      ]},
