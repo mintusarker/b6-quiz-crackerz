@@ -10,24 +10,31 @@ const DetailsQuiz = ({quiz ,showAnswerHandle}) => {
     // console.log(quiz)
 
     const notify = () => {
-      toast (correctAnswer)
+      toast.success (correctAnswer)
+       }
+
+       const quizAnswerHandle = (right) => {
+        if(right === correctAnswer){
+            toast.success ('Correct Answer')
+        }
+        else {
+            toast.warning ('Wrong Answer')
+        }
        }
     
     return (
-        <div className='border rounded w-75 bg-light border-2 mx-auto my-4 p-5'>
+        <div className='border rounded w-75 bg-light border-2 mx-auto my-5 p-5'>
            <div className='quiz-section'> <div><h3>{question}</h3></div>
            <div><button onClick={() => notify()}  className='border-0 bg-light'><FontAwesomeIcon className='text-dark ps-5 align-top' icon ={faEye}></FontAwesomeIcon></button><ToastContainer></ToastContainer>
            </div>
            </div>
              
-            <div className='my-5'>
-                {/* {
-                    options.map(option => <input className='m-1 w-75' type="button"  value= {option} /> )
-                } */}
+            <div className='mt-5'>  
                 {
                     options.map((option,idx) => <Options
                     key ={idx}
                     option ={option}
+                    quizAnswerHandle ={quizAnswerHandle}
                     ></Options>)
                 }
              </div>
