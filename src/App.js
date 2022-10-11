@@ -32,13 +32,14 @@ function App() {
       element : <Blog></Blog>},
 
       {path : '/Statistics' , 
+      loader : () => fetch ('https://openapi.programming-hero.com/api/quiz'),
       element : <Statistics></Statistics>}
 
      ]},
      {path : '*' , element : <p>Not found page : 4o4</p>}
   ])
   return (
-    <div className="">
+    <div className="app">
      <RouterProvider router = {router}></RouterProvider>
     </div>
   );

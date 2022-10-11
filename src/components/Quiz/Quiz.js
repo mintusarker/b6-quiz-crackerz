@@ -6,13 +6,13 @@ const Quiz = (id) => {
     const quiz = useLoaderData(id);
     console.log(quiz.data.questions)
     return (
-        <div>
+        <div className='container'>
            {
-            quiz.data.questions.map(quiz => <ul>
+            quiz.data.questions.map(quiz => 
             <DetailsQuiz
             quiz = {quiz}
             ></DetailsQuiz>
-            </ul>)
+            )
            }
         </div>
     );

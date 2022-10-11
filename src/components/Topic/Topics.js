@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Cart from '../Cart/Cart';
+import Statistics from '../Statistics/Statistics';
 import './Topics.css';
 
 const Topics = () => {

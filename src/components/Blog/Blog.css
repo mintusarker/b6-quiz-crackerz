@@ -1,0 +1,16 @@
+.question-section{
+    margin: 100px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding: 20px;
+}
+.question{
+    border: 1px solid rgb(5, 33, 9);
+    padding: 10px;
+    border-radius: 3px;
+}
+.section{
+    color: rgb(35, 35, 226);
+    font-size: 20px;
+}
+
