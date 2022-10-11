@@ -6,13 +6,13 @@ const Chart = ({subject}) => {
     return (
         <div>
             {/* total : {subject.total} */}
-            <LineChart width={500} height={400}>
+            {/* <LineChart width={500} height={400}>
             <Line type="monotone" dataKey={total} stroke="#82ca9d" />
             <XAxis dataKey= {total} />
                <YAxis/>
                <Tooltip></Tooltip>
-            </LineChart>
-
+            </LineChart> */}
+ 
         </div>
     );
 };

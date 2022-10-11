@@ -8,12 +8,6 @@ const Quiz = (id) => {
     const {correctAnswer} = quiz;
     // console.log(quiz.data.questions)
 
-    // const showAnswerHandle = (correctAnswer) =>{
-    //     const answer = {correctAnswer};
-    //     console.log(answer);
-
-    // }
-
     
     return (
         <div className='container py-5 my-5'>
@@ -21,7 +15,6 @@ const Quiz = (id) => {
             quiz.data.questions.map(quiz => 
             <DetailsQuiz
             quiz = {quiz}
-            // showAnswerHandle ={showAnswerHandle}
             ></DetailsQuiz>
             )
            }

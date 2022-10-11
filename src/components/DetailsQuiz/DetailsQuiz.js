@@ -2,6 +2,7 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { toast, ToastContainer } from 'react-toastify';
+import Options from '../Options/Options';
 import './DetailsQuiz.css'
 
 const DetailsQuiz = ({quiz ,showAnswerHandle}) => {
@@ -13,24 +14,22 @@ const DetailsQuiz = ({quiz ,showAnswerHandle}) => {
        }
     
     return (
-
         <div className='border rounded w-75 bg-light border-2 mx-auto my-4 p-5'>
            <div className='quiz-section'> <div><h3>{question}</h3></div>
            <div><button onClick={() => notify()}  className='border-0 bg-light'><FontAwesomeIcon className='text-dark ps-5 align-top' icon ={faEye}></FontAwesomeIcon></button><ToastContainer></ToastContainer>
            </div>
            </div>
-
-          
-
-            {/* <p>{options}</p> */}
              
-            <div className='d-grid'>
+            <div className='my-5'>
+                {/* {
+                    options.map(option => <input className='m-1 w-75' type="button"  value= {option} /> )
+                } */}
                 {
-                    options.map(option => <li>{option}</li> )
+                    options.map((option,idx) => <Options
+                    key ={idx}
+                    option ={option}
+                    ></Options>)
                 }
-
-            {/* {options.map(option => <Options 
-            option ={option}></Options>)} */}
              </div>
              
         </div>
