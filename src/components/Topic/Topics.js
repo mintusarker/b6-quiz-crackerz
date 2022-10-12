@@ -11,9 +11,6 @@ const Topics = () => {
     .then(data => setData(data.data))
   },[])
 
-    // const topics = useLoaderData();
-    // console.log(topics)
-
     return (
 
        <div>
@@ -25,14 +22,8 @@ const Topics = () => {
           data.map(subject => <Cart
           subject = {subject}
           ></Cart>)
-
          }
-       
-{/*        
-       { 
-            data.data.map(subject => <Cart
-            subject = {subject}></Cart>)
-          } */}
+      
         </div>
        </div>
     );

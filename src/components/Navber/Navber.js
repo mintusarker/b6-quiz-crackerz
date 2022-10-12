@@ -7,7 +7,7 @@ const Navber = () => {
     return (
         <div className='navber-start'>
 
-    <nav class="navbar">
+    <nav class="navbar bg-dark">
   <div class="container">
   <div className='m-2 text-warning'><h2>Learning website</h2></div>
     <form class="d-flex gap-5" role="search">

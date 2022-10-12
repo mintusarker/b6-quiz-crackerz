@@ -18,9 +18,6 @@ function App() {
        element : <Topics></Topics>},
 
       {path : '/topics' , 
-      // loader : async () => {
-      //   return fetch ('https://openapi.programming-hero.com/api/quiz')
-      // },
       element : <Topics></Topics>},
 
       {path : '/subject/:subjectId' , 
