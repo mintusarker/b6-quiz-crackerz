@@ -14,12 +14,15 @@ const Statistics = () => {
                 
             <LineChart data = {data}>
                 <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                <Line type="monotone" dataKey="name" stroke="#82ca9d" />
                 <XAxis dataKey="name" />
                 <YAxis dataKey= "total"/>
                 <Tooltip></Tooltip>
             </LineChart>
 
             </ResponsiveContainer>
+
+            <p className='text-center'>Rechart</p>
         </div>
     );
 };

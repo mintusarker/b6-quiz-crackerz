@@ -2,7 +2,7 @@ import {  faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import './Cart.css'
+
 
 const Cart = ({subject}) => {
     const {id, name, logo, total} = subject;
