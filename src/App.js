@@ -18,9 +18,9 @@ function App() {
        element : <Topics></Topics>},
 
       {path : '/topics' , 
-      loader : async () => {
-        return fetch ('https://openapi.programming-hero.com/api/quiz')
-      },
+      // loader : async () => {
+      //   return fetch ('https://openapi.programming-hero.com/api/quiz')
+      // },
       element : <Topics></Topics>},
 
       {path : '/subject/:subjectId' , 
@@ -39,8 +39,9 @@ function App() {
       element : <Statistics></Statistics>}
 
      ]},
-      {path : '*' , element : <p> Ops!! Page Not found: 4o4</p>}
-     ])
+     
+     {path : '*' , element :  <div className='text-center mt-5 pt-5'> <h3> Ops!! Page Not found: 4o4</h3> <p>You provide wrong link . </p></div>}
+    ])
      return (
     <div className="app">
      <RouterProvider router = {router}></RouterProvider>
