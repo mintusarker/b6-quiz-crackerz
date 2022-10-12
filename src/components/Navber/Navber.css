@@ -1,23 +1,12 @@
-.navber{
-    height: 80px;
-    background-color: rgb(39, 39, 62);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 40px;
+.navber-start{
+    background-color: rgb(39, 39, 62); 
 }
 
 .btn-btn {
     padding-right: 100px;
 }
-.navber a {
-    text-decoration: none;
-    padding: 1px;
-    padding-right: 20px;
-    color: white;
-    font-size: 17px;
-}
-.navber a:hover{
+
+.navber-start a:hover{
    color: orange;
 }
 
@@ -25,8 +14,8 @@
     
 /* For mobile phones: */ 
 @media only screen and (max-width: 768px) {
-    .navber {
-        width:100% ;
+    .navber-start {
+        width: 100%;
     
     }
   } 

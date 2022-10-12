@@ -5,10 +5,10 @@ import './Navber.css'
 
 const Navber = () => {
     return (
-        <div>
+        <div className='navber-start'>
 
-    <nav class="navbar bg-light">
-  <div class="container-fluid">
+    <nav class="navbar">
+  <div class="container">
   <div className='m-2 text-warning'><h2>Learning website</h2></div>
     <form class="d-flex gap-5" role="search">
           <Link className='text-decoration-none' to="/topics">Topics</Link>
@@ -24,13 +24,3 @@ const Navber = () => {
 };
 
 export default Navber;
-
-
-//     <nav className='navber'>
-    //     <div className='m-5 text-warning'><h2>Learning website</h2></div>
-    //     <div className='btn-btn'>
-    //         <Link to="/topics">Topics</Link>
-    //         <Link to="/statistics">Statistics</Link>
-    //         <Link to="/blogs">Blog</Link>     
-    //     </div>
-    //    </nav>  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
