@@ -22,21 +22,20 @@
     text-align: center;
     justify-items: center;
     padding-top: 20px;
-}    
+}   
        
     
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+/* For mobile phones: */
+ @media only screen and (max-width: 768px) {
 .banner {
  width: 100%;
 }
 
-}
-
+} 
 
 /* for desktop */
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+ @media only screen and (min-width: 768px) and (max-width: 1200px) {
 .banner {
    width: 100%;
 }
-}
+};
