@@ -1,20 +1,25 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import Chart from '../Chart/Chart';
+import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
 const Statistics = () => {
     const totalData = useLoaderData();
+    const data = totalData.data
+    const {total, name} = totalData;
     console.log(totalData)
     return (
-        <div>
-            <h2>this is chart</h2>
+        <div className='container'>
 
-            {
-            totalData.data.map(subject => <Chart 
-                key = {subject.id}
-                subject = {subject}></Chart>
-             )
-          }
+            <ResponsiveContainer  width={450} height={400} >
+                
+            <LineChart data = {data}>
+                <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                <XAxis dataKey="name" />
+                <YAxis dataKey= "total"/>
+                <Tooltip></Tooltip>
+            </LineChart>
+
+            </ResponsiveContainer>
         </div>
     );
 };

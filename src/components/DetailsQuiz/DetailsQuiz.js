@@ -10,22 +10,22 @@ const DetailsQuiz = ({quiz ,showAnswerHandle}) => {
     // console.log(quiz)
 
     const notify = () => {
-      toast.success (correctAnswer)
-       }
+      toast.success (correctAnswer , {autoClose : 800} )
+       };
 
        const quizAnswerHandle = (right) => {
         if(right === correctAnswer){
-            toast.success ('Correct Answer')
+            toast.success ('Correct Answer', {autoClose : 800})
         }
         else {
-            toast.warning ('Wrong Answer')
+            toast.warning ('Wrong Answer' , {autoClose : 800})
         }
-       }
+       };
     
     return (
-        <div className='border rounded w-75 bg-light border-2 mx-auto my-5 p-5'>
-           <div className='quiz-section'> <div><h3>{question}</h3></div>
-           <div><button onClick={() => notify()}  className='border-0 bg-light'><FontAwesomeIcon className='text-dark ps-5 align-top' icon ={faEye}></FontAwesomeIcon></button><ToastContainer></ToastContainer>
+        <div className='border rounded border-2 w-75 bg-light mx-auto my-5 p-5'>
+           <div className='quiz-section'> <div><h3 className='text-secondary'>{question}</h3></div>
+           <div><button onClick={() => notify()}  className='border-0 bg-light'><FontAwesomeIcon className='text-dark ps-5 align-top' icon ={faEye}></FontAwesomeIcon></button><ToastContainer position='top-center'></ToastContainer>
            </div>
            </div>
              

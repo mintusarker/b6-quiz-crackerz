@@ -39,13 +39,13 @@ function App() {
       element : <Statistics></Statistics>}
 
      ]},
-     {path : '*' , element : <p>Not found page : 4o4</p>}
-  ])
-  return (
+      {path : '*' , element : <p> Ops!! Page Not found: 4o4</p>}
+     ])
+     return (
     <div className="app">
      <RouterProvider router = {router}></RouterProvider>
     </div>
-  );
+    );
 }
 
 export default App;

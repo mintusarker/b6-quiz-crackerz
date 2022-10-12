@@ -8,7 +8,6 @@ const Navber = () => {
         <nav className='navber'>
         <div className='m-5 text-warning'><h2>Learning website</h2></div>
         <div className='btn'>
-            <Link to="/">Home</Link>
             <Link to="/topics">Topics</Link>
             <Link to="/statistics">Statistics</Link>
             <Link to="/blogs">Blog</Link>

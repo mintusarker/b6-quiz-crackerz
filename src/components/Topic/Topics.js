@@ -7,6 +7,7 @@ const Topics = () => {
    
 
     const topics = useLoaderData();
+    console.log(topics)
 
     return (
 
@@ -18,7 +19,7 @@ const Topics = () => {
 
         {
             topics.data.map(subject => <Cart
-            key = {subject.id}
+            key = {subject.idx}
             subject = {subject}></Cart>)
           }
          

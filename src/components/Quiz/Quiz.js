@@ -11,6 +11,7 @@ const Quiz = (id) => {
     
     return (
         <div className='container py-5 my-5'>
+            <h3 className='text-center text-primary'>Quiz of React are bellow :</h3>
            {
             quiz.data.questions.map(quiz => 
             <DetailsQuiz
